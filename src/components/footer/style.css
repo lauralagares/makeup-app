@@ -1,0 +1,14 @@
+.footer-background{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.footer-background > section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}

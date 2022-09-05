@@ -1,0 +1,7 @@
+.ad-container{
+    display: flex;
+    background-color: #f5a2ce;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
