@@ -6,19 +6,47 @@ function Menu() {
 
     let navigate = useNavigate();
 
+    let arrayProducts = [
+        {productName : "BLUSH",
+         productParam : "blush"
+        },
+        {productName : "BRONZER",
+        productParam : "bronzer"
+        },
+        {productName : "EYEBROW",
+        productParam : "eyebrow"
+        },
+        {productName : "EYELINER",
+        productParam : "eyeliner"
+        },
+        {productName : "EYESHADOW",
+        productParam : "eyeshadow"
+        },
+        {productName : "FOUNDATION",
+        productParam : "foundation"
+        },
+        {productName : "LIP LINER",
+        productParam : "lip_liner"
+        },
+        {productName : "LIPSTICK",
+        productParam : "lipstick"
+        },
+        {productName : "MASCARA",
+        productParam : "mascara"
+        },
+        {productName : "NAIL POLISH",
+        productParam : "nail_polish"
+        }
+    ];
+
     return (
         <Nav className="menu-container">
             <span onClick={()=>navigate("/brands")}>BRANDS</span>
-            <span onClick={()=>navigate("/blush")}>BLUSH</span>
-            <span onClick={()=>navigate("/bronzer")}>BRONZER</span>
-            <span onClick={()=>navigate("/eyebrow")}>EYEBROW</span>
-            <span onClick={()=>navigate("/eyeliner")}>EYELINER</span>
-            <span onClick={()=>navigate("/eyeshadow")}>EYESHADOW</span>
-            <span onClick={()=>navigate("/foundation")}>FOUNDATION</span>
-            <span onClick={()=>navigate("/lipliner")}>LIP LINER</span>
-            <span onClick={()=>navigate("/lipstick")}>LIPSTICK</span>
-            <span onClick={()=>navigate("/mascara")}>MASCARA</span>
-            <span onClick={()=>navigate("/nailpolish")}>NAIL POLISH</span>
+
+            {
+                arrayProducts.map( (p, i) => 
+                <span key={i} onClick={()=>navigate(`/product_type/${p.productParam}`)}>{p.productName}</span>) 
+            }
         </Nav>
     )
 }

@@ -1,5 +1,5 @@
 import './style.css';
-// import HomeCarousel from '../../components/carousel/carousel';
+import HomeCarousel from '../../components/carousel/carousel';
 import Ad from '../../components/ad/ad';
 import Header from '../../components/header/header';
 import Menu from '../../components/menu/menu';
@@ -15,7 +15,7 @@ function Home() {
 
       <Container>
 
-        {/* <HomeCarousel></HomeCarousel> */}
+        <HomeCarousel></HomeCarousel>
 
       </Container>
 

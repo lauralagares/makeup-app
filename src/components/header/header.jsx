@@ -7,6 +7,8 @@ function Header() {
   return (
     <Navbar className="header-background" expand="lg">
       <Container fluid>
+        <Navbar.Brand href="#home"><h1 className='text-light'>HOME</h1></Navbar.Brand>
+
         <Navbar.Brand className='d-flex'>
 
           <Form className="d-flex"
@@ -15,7 +17,7 @@ function Header() {
             <Form.Check
               type="switch"
               id="custom-switch"
-              // onClick={toggleTheme}
+            // onClick={toggleTheme}
             />
             <BsFillMoonStarsFill className='text-warning'></BsFillMoonStarsFill>
           </Form>

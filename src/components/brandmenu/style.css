@@ -1,0 +1,12 @@
+.brand-menu-container{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-menu-container > span {
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+    cursor: pointer;
+}
