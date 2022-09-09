@@ -1,15 +1,18 @@
 import Header from "../../components/header/header";
 import useFetch from "../../data/useFetch";
-import ProductCard from "../../components/productcard/productcard";
+import ProductCard from "../../components/productCard/productCard";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import BrandMenu from "../../components/brandmenu/brandmenu";
+import BrandMenu from "../../components/brandMenu/brandMenu";
+import Loader from "../../components/loader/loader";
+import {useContext} from 'react';
+import {ThemeContext} from '../../context/theme.context';
 
 
 function BrandProducts() {
 
   const {brand} = useParams();
-
+  const {theme} = useContext(ThemeContext);
   const { data, error, loading } = useFetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`);
   console.log(data);
 
@@ -17,8 +20,8 @@ function BrandProducts() {
     <>
     <Header></Header>
     <BrandMenu></BrandMenu>
-    <Container className="d-flex flex-wrap justify-content-center gap-3">
-                {loading && <p>Loading...</p>}
+    <Container fluid className={`d-flex flex-wrap justify-content-center gap-3 pt-4 bg-${theme}`}>
+                {loading && <Loader></Loader>}
                 {error && <p>Something went wrong...</p>}
                 {data.map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
             </Container>

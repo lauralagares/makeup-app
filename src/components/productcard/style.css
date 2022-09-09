@@ -1,0 +1,31 @@
+.card-body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colors-info {
+    height: 3rem;
+}
+
+.colors-info > div {
+    display: inline-block;
+    margin: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.product-info > button {
+    width: 14rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-weight: bold;
+}

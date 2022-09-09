@@ -1,27 +1,48 @@
 import './style.css';
-import {Card} from 'react-bootstrap'
+import { Card } from 'react-bootstrap';
+import {useContext} from 'react';
+import { CartContext } from '../../context/cart.context';
 
-function ProductCard({product}) {
+function ProductCard({ product }) {
+
+  let {addProduct} = useContext(CartContext);
 
   let productImage = product.image_link;
 
   const handleError = (e) => {
-  e.target.src="https://st3.depositphotos.com/23594922/31822/v/600/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg"
-  e.onError = null;
+    e.target.src = "https://cdn.dribbble.com/users/1314233/screenshots/6081627/media/8809f8695b8adb03a571b0dd66a220ea.jpg?compress=1&resize=1200x900&vertical=top"
+    e.onError = null;
+  }
+
+  const handleAdd = () => {
+    addProduct(product)
+    console.log(product)
   }
 
   return (
     <Card style={{ width: '16rem' }}>
-    <Card.Img variant="top" src={productImage}
-    onError={handleError}/>
-    <Card.Body>
-      <Card.Title className='text-capitalize'>{product.name}</Card.Title>
-      <Card.Title className='text-uppercase'>{product.brand}</Card.Title>
-      {/* <Card.Text>{product.brand}</Card.Text> */}
-      <div>VIEW MORE DETAILS</div>
-      <button>ADD TO CART</button>
-    </Card.Body>
-  </Card>
+      <Card.Img variant="top" src={productImage}
+        onError={handleError} />
+      <Card.Body className='card-body-container'>
+
+        <section>
+          <Card.Title className='text-capitalize text-center'>{product.name}</Card.Title>
+          <Card.Text className='text-uppercase text-center'>{product.brand}</Card.Text>
+        </section>
+
+        <section className='product-info'>
+          <p>${product.price}</p>
+          <p>DETAILS</p>
+          <div className='colors-info'>
+            {product.product_colors.slice(0,4).map((c, i) =>
+              <div key={i}
+              style={{backgroundColor: c.hex_value}}></div>)
+            }
+          </div>
+          <button onClick={handleAdd}>ADD TO CART</button>
+        </section>
+      </Card.Body>
+    </Card>
   )
 }
 
