@@ -1,0 +1,7 @@
+.cart-item-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #ccc;
+    width: 30rem;
+}
