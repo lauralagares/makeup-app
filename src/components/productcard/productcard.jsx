@@ -6,7 +6,6 @@ import { CartContext } from '../../context/cart.context';
 function ProductCard({ product }) {
 
   let {addProduct} = useContext(CartContext);
-
   let productImage = product.image_link;
 
   const handleError = (e) => {
@@ -21,7 +20,7 @@ function ProductCard({ product }) {
 
   return (
     <Card style={{ width: '16rem' }}>
-      <Card.Img variant="top" src={productImage}
+      <Card.Img variant="top" src={productImage} className="card-image"
         onError={handleError} />
       <Card.Body className='card-body-container'>
 
@@ -32,7 +31,6 @@ function ProductCard({ product }) {
 
         <section className='product-info'>
           <p>${product.price}</p>
-          <p>DETAILS</p>
           <div className='colors-info'>
             {product.product_colors.slice(0,4).map((c, i) =>
               <div key={i}

@@ -1,6 +1,7 @@
 .ad-container{
     display: flex;
-    background-color: #f5a2ce;
+    background-color: #ec008c;
+    color: white;
     justify-content: center;
     font-weight: bold;
     padding-top: 0.5rem;

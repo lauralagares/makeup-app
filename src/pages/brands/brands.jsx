@@ -15,8 +15,7 @@ function Brands() {
     return (
         <>
         <Header></Header>
-        <Container fluid className={`d-flex flex-wrap justify-content-center gap-4 p-4
-        bg-${theme}`}>
+        <Container fluid className={`main-container bg-${theme}`}>
             {
                 makeUpBrands.map((b,i) => 
                 <div className='brand-container'

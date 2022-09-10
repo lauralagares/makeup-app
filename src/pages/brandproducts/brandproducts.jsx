@@ -1,29 +1,36 @@
 import Header from "../../components/header/header";
 import useFetch from "../../data/useFetch";
 import ProductCard from "../../components/productCard/productCard";
-import { Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-import BrandMenu from "../../components/brandMenu/brandMenu";
 import Loader from "../../components/loader/loader";
+import { Container, Nav } from "react-bootstrap";
+import { useParams, useNavigate } from "react-router-dom";
 import {useContext} from 'react';
 import {ThemeContext} from '../../context/theme.context';
 
-
 function BrandProducts() {
 
+  let navigate = useNavigate();
+
+  const makeUpBrands = ["Clinique", "Covergirl", "Dior", "Maybelline", "NYX", "Revlon", "Smashbox"];
   const {brand} = useParams();
   const {theme} = useContext(ThemeContext);
   const { data, error, loading } = useFetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`);
-  console.log(data);
 
   return (
     <>
     <Header></Header>
-    <BrandMenu></BrandMenu>
-    <Container fluid className={`d-flex flex-wrap justify-content-center gap-3 pt-4 bg-${theme}`}>
+    <Nav className="menu-container text-uppercase">
+        {makeUpBrands.map( (b, i) => <span
+         onClick={() => navigate(`/brands_products/${b}`)}
+         key={i}>{b}</span>)}
+    </Nav>
+    <Container fluid className={`main-container bg-${theme}`}>
                 {loading && <Loader></Loader>}
                 {error && <p>Something went wrong...</p>}
-                {data.map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
+                <div className="products-container">
+                  {data.map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
+                </div>
+               
             </Container>
     </>
   )

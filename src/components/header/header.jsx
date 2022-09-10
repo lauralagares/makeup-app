@@ -1,7 +1,5 @@
 import './style.css';
 import { Navbar, Container, Form } from 'react-bootstrap';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { IoSunnySharp } from 'react-icons/io5';
 import { HiShoppingBag } from 'react-icons/hi';
 import {useContext} from 'react';
 import {ThemeContext} from '../../context/theme.context';
@@ -17,25 +15,25 @@ function Header() {
     <Navbar className="header-background" expand="lg">
       <Container fluid>
         <Navbar.Brand onClick={() => navigate("/")}>
-          <h1 className='text-light'>Make Up </h1>
+          <h1 className='header-item text-light'>Make Up</h1>
         </Navbar.Brand>
 
         <Navbar.Brand onClick={() => navigate("/cart")}>
-        <HiShoppingBag className='text-light'></HiShoppingBag>
+        <HiShoppingBag className='header-item text-light'></HiShoppingBag>
         </Navbar.Brand>
 
         <Navbar.Brand className='d-flex'>
 
           <Form className="d-flex"
             style={{ alignItems: 'center' }}>
-            <IoSunnySharp className='me-2 text-warning'></IoSunnySharp>
+            🌛
             <Form.Check
               type="switch"
               id="custom-switch"
               onClick={toggleTheme}
             />
-            <BsFillMoonStarsFill className='text-warning'></BsFillMoonStarsFill>
           </Form>
+          
         </Navbar.Brand>
       </Container>
     </Navbar>

@@ -1,6 +1,6 @@
 import './style.css';
-import HomeCarousel from '../../components/carousel/carousel';
 import Ad from '../../components/ad/ad';
+import HomeCarousel from '../../components/carousel/carousel';
 import Header from '../../components/header/header';
 import Menu from '../../components/menu/menu';
 import Footer from '../../components/footer/footer';

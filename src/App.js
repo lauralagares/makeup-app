@@ -18,7 +18,7 @@ function App() {
             <Route path="/" element={<Home></Home>} />
             <Route path="/brands" element={<Brands></Brands>} />
             <Route path="/product_type/:name" element={<ProductType></ProductType>} />
-            <Route path="/brands_products/:brand" element={<BrandProducts></BrandProducts>} />
+            <Route path="/brands_products/:brand" element={<BrandProducts></BrandProducts>}/>
             <Route path="/cart" element={<ShoppingCart></ShoppingCart>}/>
           </Routes>
         </BrowserRouter>

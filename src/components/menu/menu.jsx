@@ -1,4 +1,3 @@
-import './style.css';
 import { Nav } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
@@ -43,9 +42,8 @@ function Menu() {
         <Nav className="menu-container">
             <span onClick={()=>navigate("/brands")}>BRANDS</span>
 
-            {
-                arrayProducts.map( (p, i) => 
-                <span key={i} onClick={()=>navigate(`/product_type/${p.productParam}`)}>{p.productName}</span>) 
+            {arrayProducts.map( (p, i) => 
+             <span key={i} onClick={()=>navigate(`/product_type/${p.productParam}`)}>{p.productName}</span>) 
             }
         </Nav>
     )

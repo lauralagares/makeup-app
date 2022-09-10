@@ -13,16 +13,17 @@ function ProductType() {
     const {name} = useParams();
     const {theme} = useContext(ThemeContext);
     const { data, error, loading } = useFetch(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${name}`);
-    console.log(data);
 
     return (
         <>
             <Header></Header>
             <Menu></Menu>
-            <Container fluid className={`d-flex flex-wrap justify-content-center gap-3 pt-4 bg-${theme}`}>
+            <Container fluid className={`main-container bg-${theme}`}>
                 {loading && <Loader></Loader>}
                 {error && <p>Something went wrong...</p>}
-                {data.map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
+                <div className="products-container">
+                    {data.map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
+                </div>
             </Container>
         </>
     )

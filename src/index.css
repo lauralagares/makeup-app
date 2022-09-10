@@ -20,3 +20,32 @@ code {
 h1{
   font-family: "makeup-font";
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 1rem;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f5a2ce;
+}
+
+.menu-container > span {
+  height: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  cursor: pointer;
+}
+
