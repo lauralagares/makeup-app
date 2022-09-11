@@ -14,7 +14,7 @@ function ProductCard({ product }) {
   }
 
   const handleAdd = () => {
-    addProduct(product)
+    addProduct(product,1)
     console.log(product)
   }
 

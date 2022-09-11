@@ -7,9 +7,9 @@ const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]); //cart
     console.log(cart)
 
-    const addProduct = (item) => {
+    const addProduct = (item, newQuantity) => {
         const newCart = cart.filter(prod => prod.id !== item.id);
-        newCart.push({...item});
+        newCart.push({...item, quantity: newQuantity});
         setCart(newCart);
     }
  
