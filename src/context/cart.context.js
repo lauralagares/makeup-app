@@ -5,12 +5,21 @@ const CartContext = createContext();
 const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([]); //cart
-    console.log(cart)
+
+    // const addProduct = (item, newQuantity) => {
+    //     const newCart = cart.filter(prod => prod.id !== item.id);
+    //     newCart.push({...item, quantity: newQuantity});
+    //     setCart(newCart);
+    // }
 
     const addProduct = (item, newQuantity) => {
-        const newCart = cart.filter(prod => prod.id !== item.id);
-        newCart.push({...item, quantity: newQuantity});
-        setCart(newCart);
+        if (isInCart(item.id)) {
+            setCart(cart.map(product => {
+                return product.id === item.id ? {...product, quantity: newQuantity} : product
+            }))
+        } else {
+            setCart([...cart, {...item, newQuantity}])
+        }
     }
  
     const clearCart = () => { setCart([]) }; // clear the cart

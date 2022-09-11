@@ -24,12 +24,10 @@ function ProductCard({ product }) {
         onError={handleError} />
       <Card.Body className='card-body-container'>
 
-        <section>
           <Card.Title className='text-capitalize text-center'>{product.name}</Card.Title>
-          <Card.Text className='text-uppercase text-center'>{product.brand}</Card.Text>
-        </section>
-
+          
         <section className='product-info'>
+          <p className="text-uppercase">{product.brand}</p>
           <p>${product.price}</p>
           <div className='colors-info'>
             {product.product_colors.slice(0,4).map((c, i) =>

@@ -5,3 +5,7 @@
     border: solid 1px #ccc;
     width: 30rem;
 }
+
+.cart-item-image{
+    width: 50%;
+}

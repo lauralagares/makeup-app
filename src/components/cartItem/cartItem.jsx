@@ -18,7 +18,7 @@ function CartItem({ product }) {
     }
     return (
         <div className="cart-item-container">
-            <img src={product.image_link} alt="product" />
+            <img src={product.image_link} alt="product" className='cart-item-image'/>
 
             <div className="counter">
                 <section>
