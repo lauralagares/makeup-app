@@ -3,6 +3,7 @@ import { Navbar, Container, Form } from 'react-bootstrap';
 import { HiShoppingBag } from 'react-icons/hi';
 import {useContext} from 'react';
 import {ThemeContext} from '../../context/theme.context';
+import { CartContext } from '../../context/cart.context';
 import {useNavigate} from 'react-router-dom';
 
 function Header() {
@@ -10,6 +11,7 @@ function Header() {
   let navigate = useNavigate();
 
   const {toggleTheme} = useContext(ThemeContext);
+  const {totalProducts} = useContext(CartContext);
 
   return (
     <Navbar className="header-background" expand="lg">
@@ -20,6 +22,10 @@ function Header() {
 
         <Navbar.Brand onClick={() => navigate("/cart")}>
         <HiShoppingBag className='header-item text-light'></HiShoppingBag>
+        {totalProducts() === 0 
+        ? ''
+        : <div className="total-products">{totalProducts()}</div>}
+        
         </Navbar.Brand>
 
         <Navbar.Brand className='d-flex'>

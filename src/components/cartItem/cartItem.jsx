@@ -5,7 +5,7 @@ import {CartContext} from '../../context/cart.context';
 
 function CartItem({ product }) {
 
-    let {addProduct} = useContext(CartContext);
+    let {addProduct, removeProduct} = useContext(CartContext);
 
     const [count, setCount] = useState(1);
 
@@ -28,6 +28,8 @@ function CartItem({ product }) {
                 </section>
                 <button onClick={() => onAdd(count)}>ADD</button>
             </div>
+
+            <button onClick={() => removeProduct(product.id)}>X</button>
         </div>
     )
 }

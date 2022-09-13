@@ -2,10 +2,14 @@
     display: flex;
     align-items: center;
     background-color: white;
-    border: solid 1px #ccc;
-    width: 30rem;
+    border-top: solid 1px #ccc;
+    width: 100%;
 }
 
 .cart-item-image{
     width: 50%;
+}
+
+.counter {
+    margin: 1rem;
 }

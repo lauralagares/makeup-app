@@ -1,0 +1,9 @@
+.cart-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: minmax(100vh, auto);
+}
+
+.cart-grid-item{
+    border: 1px solid #ccc;
+}
