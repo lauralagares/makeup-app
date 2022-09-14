@@ -4,12 +4,68 @@
     background-color: white;
     border-top: solid 1px #ccc;
     width: 100%;
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
 }
 
-.cart-item-image{
-    width: 50%;
+.item-img-container {
+  width: 30%;
+}
+
+.cart-item-name {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
 .counter {
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    justify-content: center;
+    width: 20%;
 }
+
+.counter > section {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.counter > section > button {
+    width: 2rem;
+    height: 2rem;
+    font-weight: bold;
+    background-color: #f5a2ce;
+    border: none;
+
+}
+
+.counter > button{
+    background-color: #f5a2ce;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.item-remove-button {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row-reverse;
+    width: 10%;
+} 
+
+.item-remove-button > button {
+    background-color: #f5a2ce;
+    color: #ccc;
+    border: none;
+}
+
+.item-remove-button > button:hover{
+    color: rgb(67, 67, 67);
+}
+

@@ -11,7 +11,7 @@ function BrandProducts() {
 
   let navigate = useNavigate();
 
-  const makeUpBrands = ["Clinique", "Covergirl", "Dior", "Maybelline", "NYX", "Revlon", "Smashbox"];
+  const makeUpBrands = ["Clinique", "Covergirl", "Dior", "Glossier", "Maybelline", "NYX", "Revlon", "Smashbox"];
   const {brand} = useParams();
   const {theme} = useContext(ThemeContext);
   const { data, error, loading } = useFetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`);

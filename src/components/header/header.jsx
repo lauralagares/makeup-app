@@ -20,8 +20,8 @@ function Header() {
           <h1 className='header-item text-light'>Make Up</h1>
         </Navbar.Brand>
 
-        <Navbar.Brand onClick={() => navigate("/cart")}>
-        <HiShoppingBag className='header-item text-light'></HiShoppingBag>
+        <Navbar.Brand onClick={() => navigate("/cart")} className='header-item'>
+        <HiShoppingBag className='text-light fs-1'></HiShoppingBag>
         {totalProducts() === 0 
         ? ''
         : <div className="total-products">{totalProducts()}</div>}

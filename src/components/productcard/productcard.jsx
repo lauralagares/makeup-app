@@ -5,8 +5,13 @@ import { CartContext } from '../../context/cart.context';
 
 function ProductCard({ product }) {
 
-  let {addProduct} = useContext(CartContext);
+  let {addProduct, isInCart} = useContext(CartContext);
   let productImage = product.image_link;
+
+  let productName = product.name.split(" ", 3);
+  let shortProductName = productName.join(" ");
+  
+ 
 
   const handleError = (e) => {
     e.target.src = "https://cdn.dribbble.com/users/1314233/screenshots/6081627/media/8809f8695b8adb03a571b0dd66a220ea.jpg?compress=1&resize=1200x900&vertical=top"
@@ -21,10 +26,12 @@ function ProductCard({ product }) {
   return (
     <Card style={{ width: '16rem' }}>
       <Card.Img variant="top" src={productImage} className="card-image"
-        onError={handleError} />
+        onError={handleError} alt={product.name} />
       <Card.Body className='card-body-container'>
 
-          <Card.Title className='text-capitalize text-center'>{product.name}</Card.Title>
+          <Card.Title className='text-capitalize text-center'>
+            {shortProductName}
+          </Card.Title>
           
         <section className='product-info'>
           <p className="text-uppercase">{product.brand}</p>
@@ -35,7 +42,12 @@ function ProductCard({ product }) {
               style={{backgroundColor: c.hex_value}}></div>)
             }
           </div>
-          <button onClick={handleAdd}>ADD TO CART</button>
+          {
+            isInCart(product.id) === true
+            ? <button className="button-add-2">ADDED TO CART</button>
+            : <button className="button-add-1" onClick={handleAdd}>ADD TO CART</button>
+          }
+          
         </section>
       </Card.Body>
     </Card>

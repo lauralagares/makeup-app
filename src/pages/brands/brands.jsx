@@ -10,7 +10,7 @@ function Brands() {
     let navigate = useNavigate();
     const {theme} = useContext(ThemeContext);
 
-    const makeUpBrands = ["Clinique", "Covergirl", "Dior", "Maybelline", "NYX", "Revlon", "Smashbox"];
+    const makeUpBrands = ["Clinique", "Covergirl", "Dior","Glossier", "Maybelline", "NYX", "Revlon", "Smashbox"];
 
     return (
         <>

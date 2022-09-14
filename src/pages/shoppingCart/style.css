@@ -1,9 +1,47 @@
 .cart-grid-container{
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 65% 35%;
     grid-auto-rows: minmax(100vh, auto);
 }
 
 .cart-grid-item{
     border: 1px solid #ccc;
+}
+
+.grid-item-2 > section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.grid-item-2 > section:nth-child(1) > p {
+    font-size: 2rem;
+}
+
+.grid-item-2 > section:nth-child(2) > span:nth-child(2) {
+    color: #ec008c;
+}
+
+.grid-item-2 > section:nth-child(5) > span:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-button > button {
+    background-color: #ec008c;
+    border: none;
+    color: white;
+    width: 60%;
+    font-weight: bold;
+    font-size: larger;
+    margin: 2rem;
+    padding: 1rem;
 }
