@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* 
+@font-face{
+  font-family: "makeup-font";
+  src: url(../src/fonts/Makeup\ Personal\ Use.ttf)
+}
+
+h1{
+  font-family: "makeup-font";
+} */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 1rem;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f5a2ce;
+}
+
+.menu-container > span {
+  height: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  cursor: pointer;
+}
+

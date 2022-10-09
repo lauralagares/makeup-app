@@ -1,0 +1,20 @@
+.header-background{
+    background-color: #000;
+}
+
+.header-item{
+    display: flex;
+    cursor: pointer;
+}
+
+.total-products{
+    display: flex;
+    justify-content: center;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #ec008c;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 50%;
+}
