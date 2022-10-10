@@ -1,0 +1,34 @@
+:root {
+    --mainColor: #ec008c;
+  }
+
+.menu-container > span {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background:
+       linear-gradient(
+         to bottom,
+         var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 0px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .8s;
+  }
+
+.menu-container > span:hover {
+    background-size: 4px 50px;
+    color: yellow;
+  }
+
+
+
+  
+
+
+

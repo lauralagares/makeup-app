@@ -1,54 +1,68 @@
 .card-body-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: #776969;
+    height: 50%;
     justify-content: space-between;
 }
 
 .card-image{
     height: 50%;
 }
-.product-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #776969;
+
+/* .card-body-container > p {
+    height: 10%;
+} */
+
+.card-body-container > p:nth-child(1) {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: bold;
+    height: 10%;
 }
 
-.product-info > p:nth-child(1) {
-    font-size: 0.8rem;
+.card-body-container > p:nth-child(2) {
+    font-size: 0.6rem;
+    height: 7%;
 }
 
-.product-info > p:nth-child(2) {
+.card-body-container > p:nth-child(3) {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    height: 7%;
 }
 .colors-info {
-    height: 3rem;
+    height: 10%;
 }
 
 .colors-info > div {
     display: inline-block;
-    margin: 0.2rem;
-    width: 2rem;
-    height: 2rem;
+    margin: 0rem 0.2rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     border: 1px solid #ccc;
 }
 
-.product-info > button {
-    width: 14rem;
-    height: 3rem;
+.card-body-container > button {
+    font-size: 0.8rem;
+    width: 80%;
+    height: 15%;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .button-add-1 {
     border: none;
     background-color: #ec008c;
     color: white;
+    /* color: yellow; */
 }
 
 .button-add-2 {
     background-color: white;
+    /* background-color: yellow; */
     color: #ec008c;
     border: 1px solid #ec008c;
 }

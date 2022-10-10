@@ -24,32 +24,31 @@ function ProductCard({ product }) {
   }
 
   return (
-    <Card style={{ width: '16rem' }}>
+    <Card style={{ width: '12rem' }}>
       <Card.Img variant="top" src={productImage} className="card-image"
         onError={handleError} alt={product.name} />
-      <Card.Body className='card-body-container'>
+      <section className='card-body-container'>
 
-          <Card.Title className='text-capitalize text-center'>
-            {shortProductName}
-          </Card.Title>
-          
-        <section className='product-info'>
+          <p className='text-capitalize text-center'> {shortProductName}</p>
+    
           <p className="text-uppercase">{product.brand}</p>
+
           <p>${product.price}</p>
+
           <div className='colors-info'>
             {product.product_colors.slice(0,4).map((c, i) =>
               <div key={i}
               style={{backgroundColor: c.hex_value}}></div>)
             }
           </div>
+
           {
             isInCart(product.id) === true
             ? <button className="button-add-2">ADDED TO CART</button>
             : <button className="button-add-1" onClick={handleAdd}>ADD TO CART</button>
           }
-          
-        </section>
-      </Card.Body>
+  
+      </section>
     </Card>
   )
 }
