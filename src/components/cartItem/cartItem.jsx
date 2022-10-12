@@ -5,15 +5,19 @@ import { CartContext } from '../../context/cart.context';
 
 function CartItem({ product }) {
 
-    let { addProduct, removeProduct } = useContext(CartContext);
+    let { addProduct, substractProduct, removeProduct } = useContext(CartContext);
 
     const [count, setCount] = useState(1);
-    const decrease = () => { setCount(count - 1) };
-    const increase = () => { setCount(count + 1) };
 
-    const onAdd = (quantity) => {
-        addProduct(product, quantity)
-        console.log(`Compraste: ${quantity}`)
+    const onSubstract = () => {
+        setCount(count - 1)
+        substractProduct(product, count);
+    }
+
+    const onAdd = () => {
+        setCount(count + 1);
+        addProduct(product, count)
+        console.log(`${count} added`)
     }
 
     const handleError = (e) => {
@@ -36,12 +40,10 @@ function CartItem({ product }) {
             <div className="counter">
 
                 <div>
-                    <button disabled={count <= 1} onClick={decrease}>-</button>
+                    <button disabled={count <= 1} onClick={() => onSubstract(count)}>-</button>
                     <span>{count}</span>
-                    <button onClick={increase}>+</button>
+                    <button onClick={() => onAdd(count)}>+</button>
                 </div>
-
-                <button onClick={() => onAdd(count)}>Update Quantity</button>
 
                 <p className='remove-item' onClick={() => removeProduct(product.id)}>Remove</p>
             </div>

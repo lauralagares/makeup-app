@@ -9,7 +9,17 @@ const CartProvider = ({ children }) => {
     const addProduct = (item, quantity) => {
         if (isInCart(item.id)) {
             setCart(cart.map(product => {
-                return product.id === item.id ? {...product, quantity: quantity} : product
+                return product.id === item.id ? {...product, quantity: quantity + 1} : product
+            }))
+        } else {
+            setCart([...cart, {...item, quantity}])
+        }
+    }
+
+    const substractProduct = (item, quantity) => {
+        if (isInCart(item.id)) {
+            setCart(cart.map(product => {
+                return product.id === item.id ? {...product, quantity: quantity - 1} : product
             }))
         } else {
             setCart([...cart, {...item, quantity}])
@@ -37,6 +47,7 @@ const CartProvider = ({ children }) => {
         isInCart,
         removeProduct,
         addProduct,
+        substractProduct,
         totalProducts,
         totalPrice,
         cart
