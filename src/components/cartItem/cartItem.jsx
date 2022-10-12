@@ -31,22 +31,19 @@ function CartItem({ product }) {
 
             <div className="cart-item-name">
                 <p>{product.name}</p>
-             
             </div>
 
             <div className="counter">
-                <section>
+
+                <div>
                     <button disabled={count <= 1} onClick={decrease}>-</button>
                     <span>{count}</span>
                     <button onClick={increase}>+</button>
-                </section>
-                <button onClick={() => onAdd(count)}>UPDATE</button>
+                </div>
 
-                   <p>${product.price * product.quantity}</p>
-            </div>
-            
-            <div className="item-remove-button">
-                <button onClick={() => removeProduct(product.id)}>X</button>
+                <button onClick={() => onAdd(count)}>Update Quantity</button>
+
+                <p className='remove-item' onClick={() => removeProduct(product.id)}>Remove</p>
             </div>
             
         </div>

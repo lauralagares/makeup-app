@@ -11,7 +11,9 @@ function ShoppingCart() {
 
   const { theme, fontColor } = useContext(ThemeContext);
   const { cart, totalPrice } = useContext(CartContext);
-  console.log(cart)
+
+  let subTotalPrice = totalPrice().toFixed(2);
+  let totalPlusShipping = totalPrice() + 20;
 
   return (
     <>
@@ -24,17 +26,17 @@ function ShoppingCart() {
           )}
         </div>
         <div className="cart-grid-item grid-item-2">
-          <section><p>ORDER SUMMARY</p></section>
+          <p className='d-flex justify-content-center fs-4 fw-bold'>ORDER SUMMARY</p>
           <section>
-            <span>ADD A PROMO CODE</span>
+            <span>Add a promo code</span>
             <span>+</span>
           </section>
           <section>
-            <span>SUBTOTAL</span> 
-            <span>${totalPrice()}</span>
+            <span>Subtotal</span>
+            <span>${subTotalPrice}</span>
           </section>
           <section>
-            <span>SHIPPING </span>
+            <span>Shipping</span>
             <span>$20</span>
           </section>
          
@@ -44,7 +46,7 @@ function ShoppingCart() {
 
             : <section>
                 <span>TOTAL</span>
-                <span>${totalPrice() > 100 ? totalPrice() : totalPrice() + 20}</span>
+                <span>${subTotalPrice > 100 ? subTotalPrice : totalPlusShipping.toFixed(2)}</span>
               </section>
           }
           

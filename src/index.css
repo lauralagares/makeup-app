@@ -11,15 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* 
+
 @font-face{
   font-family: "makeup-font";
-  src: url(../src/fonts/Makeup\ Personal\ Use.ttf)
+  src: url(../src/fonts/Calligraphy-D4pm.ttf)
 }
 
 h1{
   font-family: "makeup-font";
-} */
+}
 
 .main-container {
   display: flex;
@@ -39,13 +39,39 @@ h1{
 .menu-container {
   display: flex;
   justify-content: center;
-  background-color: #f5a2ce;
+  align-items: center;
+  /* background-color: #f5a2ce; */
+  /* background-color: #ffa1e8; */
+  background-color: black;
+}
+
+:root {
+  --mainColor: #ec008c;
 }
 
 .menu-container > span {
+  display: flex;
   height: 2rem;
   font-weight: bold;
   margin: 1rem;
   cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  background:
+     linear-gradient(
+       to bottom,
+       var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .8s;
+}
+
+.menu-container > span:hover {
+  background-size: 4px 50px;
 }
 

@@ -5,15 +5,12 @@
     color: #776969;
     height: 50%;
     justify-content: space-between;
+    margin: 0.5rem
 }
 
 .card-image{
     height: 50%;
 }
-
-/* .card-body-container > p {
-    height: 10%;
-} */
 
 .card-body-container > p:nth-child(1) {
     font-size: 0.9rem;
@@ -24,13 +21,13 @@
 
 .card-body-container > p:nth-child(2) {
     font-size: 0.6rem;
-    height: 7%;
+    height: 5%;
 }
 
 .card-body-container > p:nth-child(3) {
     font-weight: 500;
-    font-size: 0.8rem;
-    height: 7%;
+    font-size: 0.85rem;
+    height: 5%;
 }
 .colors-info {
     height: 10%;
@@ -48,21 +45,22 @@
 .card-body-container > button {
     font-size: 0.8rem;
     width: 80%;
-    height: 15%;
+    height: 16%;
     font-weight: bold;
-    margin-bottom: 0.5rem;
 }
 
 .button-add-1 {
     border: none;
     background-color: #ec008c;
     color: white;
-    /* color: yellow; */
 }
+
+/* .button-add-1:hover {
+    color: yellow;
+} */
 
 .button-add-2 {
     background-color: white;
-    /* background-color: yellow; */
     color: #ec008c;
     border: 1px solid #ec008c;
 }

@@ -9,7 +9,7 @@ function Footer() {
   return (
     <Nav className="footer-background">
       <section>
-        <h2>COMPANY NAME</h2>
+        <h2>COMPANY</h2>
         <p>About Us</p>
         <p>Store Locator</p>
         <p>Faqs</p>

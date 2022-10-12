@@ -11,23 +11,12 @@
 .grid-item-2 > section {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
-    font-weight: 500;
     border-top: 1px solid #ccc;
     padding: 1rem;
 }
 
-.grid-item-2 > section:nth-child(1) > p {
-    font-size: 2rem;
-}
-
 .grid-item-2 > section:nth-child(2) > span:nth-child(2) {
     color: #ec008c;
-}
-
-.grid-item-2 > section:nth-child(5) > span:nth-child(2) {
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 .checkout-button {

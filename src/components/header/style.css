@@ -5,6 +5,7 @@
 .header-item{
     display: flex;
     cursor: pointer;
+    font-size: 3.5rem;
 }
 
 .total-products{
@@ -13,7 +14,7 @@
     width: 1.3rem;
     height: 1.3rem;
     background-color: #ec008c;
-    color: white;
+    color: yellow;
     font-size: 0.8rem;
     font-weight: 500;
     border-radius: 50%;
