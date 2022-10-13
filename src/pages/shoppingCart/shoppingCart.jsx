@@ -52,7 +52,7 @@ function ShoppingCart() {
           
 
           <div className ="checkout-button">
-          <button>PROCEED TO CHECKOUT</button>
+          <button><span>PROCEED TO CHECKOUT</span></button>
           </div>
 
         </div>

@@ -17,7 +17,7 @@ function Header() {
     <Navbar className="header-background" expand="lg">
       <Container fluid>
         <Navbar.Brand onClick={() => navigate("/")}>
-          <h1 className='header-item text-light'>MAKE UP</h1>
+          <h1 className='header-item'>MAKE UP</h1>
         </Navbar.Brand>
 
         <Navbar.Brand onClick={() => navigate("/cart")} className='header-item'>

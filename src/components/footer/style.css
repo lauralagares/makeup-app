@@ -6,6 +6,10 @@
     
 }
 
+.footer-background > section > h1 {
+    font-size: 3.5rem;
+}
+
 .footer-background > section {
     display: flex;
     flex-direction: column;

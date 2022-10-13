@@ -7,7 +7,7 @@
 }
 
 .item-img-container {
-  width: 30%;
+  width: 20%;
 }
 
 .cart-item-name {
@@ -27,7 +27,7 @@
     align-items: center;
     gap:1rem;
     justify-content: center;
-    width: 30%;
+    width: 40%;
 }
 
 .counter > div {

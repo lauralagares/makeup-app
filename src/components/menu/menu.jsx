@@ -55,15 +55,15 @@ function Menu() {
         <Nav className="menu-container">
 
             <Dropdown>
-                <Dropdown.Toggle variant="warning" id="dropdown-basic"className='fw-bold'>
-                    BRANDS
+                <Dropdown.Toggle variant="warning" id="dropdown-basic">
+                    <span className='dropdown-brands fw-bold'>BRANDS</span>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
                     {makeUpBrands.map((b, i) =>
                             <Dropdown.Item key={i}
                                 onClick={() => navigate(`/brands_products/${b}`)}>
-                                <p>{b}</p>
+                                <p className='text-uppercase fw-bold dropdown-item'>{b}</p>
                             </Dropdown.Item>)}
                 </Dropdown.Menu>
             </Dropdown>

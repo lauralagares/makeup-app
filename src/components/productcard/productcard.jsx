@@ -24,7 +24,7 @@ function ProductCard({ product }) {
   }
 
   return (
-    <Card style={{ width: '12rem' }}>
+    <Card className='card-container'>
       <Card.Img variant="top" src={productImage} className="card-image"
         onError={handleError} alt={product.name} />
       <section className='card-body-container'>
@@ -44,8 +44,8 @@ function ProductCard({ product }) {
 
           {
             isInCart(product.id) === true
-            ? <button className="button-add-2">ADDED TO CART</button>
-            : <button className="button-add-1" onClick={handleAdd}>ADD TO CART</button>
+            ? <button className="button-add-2"><span>ADDED TO CART</span></button>
+            : <button className="button-add-1" onClick={handleAdd}><span>ADD TO CART</span></button>
           }
   
       </section>

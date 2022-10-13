@@ -9,7 +9,7 @@ function Footer() {
   return (
     <Nav className="footer-background">
       <section>
-        <h2>COMPANY</h2>
+        <h1>COMPANY</h1>
         <p>About Us</p>
         <p>Store Locator</p>
         <p>Faqs</p>
@@ -17,7 +17,7 @@ function Footer() {
       </section>
 
       <section>
-        <h2>CUSTOMER SUPPORT</h2>
+        <h1>CUSTOMER SUPPORT</h1>
         <p>Contact Us</p>
         <p>Shipping Info</p>
         <p>Returns</p>
@@ -25,7 +25,7 @@ function Footer() {
       </section>
     
       <section>
-        <h2>CONNECT WITH US </h2>
+        <h1>CONNECT WITH US </h1>
         <p><BsInstagram></BsInstagram></p>
         <p><BsFacebook></BsFacebook></p>
         <p><BsTwitter></BsTwitter></p>

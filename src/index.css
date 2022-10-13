@@ -13,12 +13,22 @@ code {
 }
 
 @font-face{
-  font-family: "makeup-font";
+  font-family: "makeup-first-font";
   src: url(../src/fonts/Calligraphy-D4pm.ttf)
 }
 
+@font-face{
+  font-family: "makeup-second-font";
+  src: url(../src/fonts/Dosis-ExtraLight.ttf)
+}
+
+
 h1{
-  font-family: "makeup-font";
+  font-family: "makeup-first-font";
+}
+
+p, span{
+  font-family: 'makeup-second-font';
 }
 
 .main-container {
@@ -40,8 +50,6 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #f5a2ce; */
-  /* background-color: #ffa1e8; */
   background-color: black;
 }
 
@@ -55,8 +63,7 @@ h1{
   font-weight: bold;
   margin: 1rem;
   cursor: pointer;
-  font-size: 0.75rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   background:
      linear-gradient(
        to bottom,
@@ -74,4 +81,21 @@ h1{
 .menu-container > span:hover {
   background-size: 4px 50px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 430px){
+
+.menu-container > span {
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
+
+.dropdown-brands{
+  font-size: 0.9rem;
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+}
+  
+  }
 
