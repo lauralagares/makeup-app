@@ -22,11 +22,18 @@ function ShoppingCart() {
       <Container fluid className={`cart-grid-container bg-${theme} text-${fontColor}`}>  
 
         <div className="cart-grid-item grid-item-1">
-          {cart.map(e => <CartItem key={e.id} product={e}></CartItem>
-          )}
+          {
+            cart.length === 0 
+            ? <div>
+                <p>Your bag is empty.</p>
+                <p>CONTINUE SHOPPING</p>
+              </div>
+            : cart.map(e => <CartItem key={e.id} product={e}></CartItem>
+          )
+          }
         </div>
         <div className="cart-grid-item grid-item-2">
-          <p className='d-flex justify-content-center fs-4 fw-bold'>ORDER SUMMARY</p>
+          <p>ORDER SUMMARY</p>
           <section>
             <span>Add a promo code</span>
             <span>+</span>
@@ -50,7 +57,6 @@ function ShoppingCart() {
               </section>
           }
           
-
           <div className ="checkout-button">
           <button><span>PROCEED TO CHECKOUT</span></button>
           </div>
