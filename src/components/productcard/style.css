@@ -28,7 +28,7 @@
 }
 
 .card-body-container > p:nth-child(3) {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     height: 5%;
 }
 .colors-info {
@@ -79,12 +79,12 @@
 }
     
 .card-body-container > p:nth-child(3) {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     
 }
 
 .card-body-container > button {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 
 }

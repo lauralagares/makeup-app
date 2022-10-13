@@ -1,4 +1,5 @@
 import './style.css';
+import { useNavigate } from 'react-router-dom';
 import Ad from '../../components/ad/ad';
 import Header from '../../components/header/header';
 import { useContext } from 'react';
@@ -8,6 +9,8 @@ import { Container } from 'react-bootstrap';
 import CartItem from '../../components/cartItem/cartItem';
 
 function ShoppingCart() {
+
+  const navigate = useNavigate();
 
   const { theme, fontColor } = useContext(ThemeContext);
   const { cart, totalPrice } = useContext(CartContext);
@@ -24,9 +27,9 @@ function ShoppingCart() {
         <div className="cart-grid-item grid-item-1">
           {
             cart.length === 0 
-            ? <div>
+            ? <div className='empty-cart'>
                 <p>Your bag is empty.</p>
-                <p>CONTINUE SHOPPING</p>
+                <p onClick={() => navigate(-1)}>CONTINUE SHOPPING</p>
               </div>
             : cart.map(e => <CartItem key={e.id} product={e}></CartItem>
           )

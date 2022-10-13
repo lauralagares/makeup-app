@@ -8,7 +8,7 @@
     border: 1px solid #ccc;
 }
 
-.grid-item-1 > div {
+.empty-cart {
     display: flex;
     flex-direction: column;
     justify-content: center;
