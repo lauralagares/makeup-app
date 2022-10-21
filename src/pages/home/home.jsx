@@ -18,7 +18,7 @@ function Home() {
       <Header></Header>
       <Menu></Menu>
 
-      <Container fluid className={`bg-${theme} main-container`} >
+      <Container fluid className={`bg-${theme} home-container`} >
 
         <div className='wrapper'>
 
