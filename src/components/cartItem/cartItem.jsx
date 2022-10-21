@@ -7,17 +7,16 @@ function CartItem({ product }) {
 
     let { addProduct, substractProduct, removeProduct } = useContext(CartContext);
 
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(product.quantity);
 
     const onSubstract = () => {
-        setCount(count - 1)
+        setCount(count - 1);
         substractProduct(product, count);
     }
 
     const onAdd = () => {
         setCount(count + 1);
-        addProduct(product, count)
-        console.log(`${count} added`)
+        addProduct(product, count);
     }
 
     const handleError = (e) => {
