@@ -16,9 +16,11 @@
     margin-top: 0.5rem;
     font-size: 1.3rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .grid-item-1 > div > p:nth-child(2) {
+    text-align: center;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -49,7 +51,7 @@
 }
 
 .grid-item-2 > section:nth-child(2) > span:nth-child(2) {
-    color: #ec008c;
+    color: #FD97B5;
 }
 
 .checkout-button {
@@ -58,7 +60,8 @@
 }
 
 .checkout-button > button {
-    background-color: #ec008c;
+    background-color: #FD97B5;
+    text-align: center;
     border: none;
     color: white;
     width: 60%;
@@ -83,7 +86,7 @@
 }
 
 .checkout-button > button {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
 }

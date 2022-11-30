@@ -1,6 +1,6 @@
 import './Style.css';
 import { Navbar, Container, Form } from 'react-bootstrap';
-import { HiShoppingBag } from 'react-icons/hi';
+import {GiShoppingCart} from 'react-icons/gi';
 import {useContext} from 'react';
 import {ThemeContext} from '../../Context/Theme.Context';
 import { CartContext } from '../../Context/Cart.Context';
@@ -21,7 +21,7 @@ function Header() {
         </Navbar.Brand>
 
         <Navbar.Brand onClick={() => navigate("/cart")} className='header-item'>
-        <HiShoppingBag className='text-light fs-1'></HiShoppingBag>
+        <GiShoppingCart className='cart-icon'></GiShoppingCart>
         {totalProducts() === 0 
         ? ''
         : <div className="total-products">{totalProducts()}</div>}

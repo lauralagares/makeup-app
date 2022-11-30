@@ -1,12 +1,9 @@
 import { Nav } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
-import Dropdown from 'react-bootstrap/Dropdown';
 
 function Menu() {
 
     let navigate = useNavigate();
-
-    const makeUpBrands = ["Clinique", "Covergirl", "Dior", "Glossier", "Maybelline", "NYX", "Revlon", "Smashbox"];
 
     let arrayProducts = [
         {
@@ -54,23 +51,10 @@ function Menu() {
     return (
         <Nav className="menu-container">
 
-            <Dropdown>
-                <Dropdown.Toggle variant="warning" id="dropdown-basic">
-                    <span className='dropdown-brands fw-bold'>BRANDS</span>
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    {makeUpBrands.map((b, i) =>
-                            <Dropdown.Item key={i}
-                                onClick={() => navigate(`/brands_products/${b}`)}>
-                                <p className='text-uppercase fw-bold dropdown-item'>{b}</p>
-                            </Dropdown.Item>)}
-                </Dropdown.Menu>
-            </Dropdown>
-
             {arrayProducts.map((p, i) =>
                 <span key={i} onClick={() => navigate(`/product_type/${p.productParam}`)}>{p.productName}</span>)
             }
+
         </Nav>
     )
 }
