@@ -27,9 +27,9 @@ h1{
   font-family: "makeup-first-font";
 }
 
-p, span{
+/* p, span{
   font-family: 'makeup-second-font';
-}
+} */
 
 .main-container {
   display: flex;
