@@ -5,8 +5,8 @@ import ProductType from './Pages/ProductType/ProductType';
 import BrandProducts from './Pages/BrandProducts/BrandProducts';
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ThemeProvider } from '../src/Context/theme.context';
-import { CartProvider } from '../src/Context/cart.context';
+import { ThemeProvider } from './Context/Theme.Context';
+import { CartProvider } from './Context/Cart.Context';
 
 function App() {
   return (

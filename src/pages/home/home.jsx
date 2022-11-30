@@ -6,7 +6,7 @@ import Menu from '../../Components/Menu/Menu';
 import Footer from '../../Components/Footer/Footer';
 import { Container } from 'react-bootstrap';
 import { useContext } from 'react';
-import { ThemeContext } from '../../Context/theme.context';
+import { ThemeContext } from '../../Context/Theme.Context';
 
 function Home() {
 

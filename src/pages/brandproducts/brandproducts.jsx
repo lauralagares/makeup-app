@@ -5,7 +5,7 @@ import Loader from "../../Components/Loader/Loader";
 import { Container, Nav } from "react-bootstrap";
 import { useParams, useNavigate } from "react-router-dom";
 import {useContext} from 'react';
-import {ThemeContext} from '../../Context/theme.context';
+import {ThemeContext} from '../../Context/Theme.Context';
 
 function BrandProducts() {
 

@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Ad from '../../Components/Ad/Ad';
 import Header from '../../Components/Header/Header';
 import { useContext } from 'react';
-import { CartContext } from '../../Context/cart.context';
-import { ThemeContext } from '../../Context/theme.context';
+import { CartContext } from '../../Context/Cart.Context';
+import { ThemeContext } from '../../Context/Theme.Context';
 import { Container } from 'react-bootstrap';
 import CartItem from '../../Components/CartItem/CartItem';
 

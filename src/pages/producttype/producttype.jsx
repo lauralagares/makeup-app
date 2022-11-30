@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Loader from "../../Components/Loader/Loader";
 import {useContext} from 'react';
-import {ThemeContext} from '../../Context/theme.context';
+import {ThemeContext} from '../../Context/Theme.Context';
 
 function ProductType() {
 

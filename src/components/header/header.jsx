@@ -2,8 +2,8 @@ import './Style.css';
 import { Navbar, Container, Form } from 'react-bootstrap';
 import { HiShoppingBag } from 'react-icons/hi';
 import {useContext} from 'react';
-import {ThemeContext} from '../../Context/theme.context';
-import { CartContext } from '../../Context/cart.context';
+import {ThemeContext} from '../../Context/Theme.Context';
+import { CartContext } from '../../Context/Cart.Context';
 import {useNavigate} from 'react-router-dom';
 
 function Header() {
