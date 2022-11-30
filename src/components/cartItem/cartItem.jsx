@@ -1,7 +1,7 @@
-import './style.css';
+import './Style.css';
 import { useState } from 'react';
 import { useContext } from 'react';
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from '../../Context/cart.context';
 
 function CartItem({ product }) {
 

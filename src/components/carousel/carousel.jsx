@@ -1,4 +1,4 @@
-import './style.css';
+import './Style.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 function HomeCarousel() {

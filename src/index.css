@@ -14,12 +14,12 @@ code {
 
 @font-face{
   font-family: "makeup-first-font";
-  src: url(../src/fonts/Calligraphy-D4pm.ttf)
+  src: url(../src/Fonts/Calligraphy-D4pm.ttf)
 }
 
 @font-face{
   font-family: "makeup-second-font";
-  src: url(../src/fonts/Dosis-ExtraLight.ttf)
+  src: url(../src/Fonts/Dosis-ExtraLight.ttf)
 }
 
 

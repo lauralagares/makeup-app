@@ -1,11 +1,11 @@
-import Header from "../../components/header/header";
-import useFetch from "../../data/useFetch";
-import ProductCard from "../../components/productCard/productCard";
-import Loader from "../../components/loader/loader";
+import Header from "../../Components/Header/Header";
+import useFetch from "../../Data/useFetch";
+import ProductCard from "../../Components/ProductCard/ProductCard";
+import Loader from "../../Components/Loader/Loader";
 import { Container, Nav } from "react-bootstrap";
 import { useParams, useNavigate } from "react-router-dom";
 import {useContext} from 'react';
-import {ThemeContext} from '../../context/theme.context';
+import {ThemeContext} from '../../Context/theme.context';
 
 function BrandProducts() {
 

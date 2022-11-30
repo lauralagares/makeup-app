@@ -1,4 +1,4 @@
-import './style.css';
+import './Style.css';
 import Nav from 'react-bootstrap/Nav'; 
 import {BsInstagram} from 'react-icons/bs';
 import {BsFacebook} from 'react-icons/bs';

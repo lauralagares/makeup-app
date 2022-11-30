@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home/home';
-import ProductType from './pages/ProductType/ProductType';
-import BrandProducts from './pages/brandProducts/brandProducts';
-import ShoppingCart from './pages/shoppingCart/shoppingCart';
+import Home from './Pages/Home/Home';
+import ProductType from './Pages/ProductType/ProductType';
+import BrandProducts from './Pages/BrandProducts/BrandProducts';
+import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ThemeProvider } from '../src/context/theme.context';
-import { CartProvider } from '../src/context/cart.context';
+import { ThemeProvider } from '../src/Context/theme.context';
+import { CartProvider } from '../src/Context/cart.context';
 
 function App() {
   return (

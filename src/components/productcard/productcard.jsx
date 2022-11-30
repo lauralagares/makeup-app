@@ -1,7 +1,7 @@
-import './style.css';
+import './Style.css';
 import { Card } from 'react-bootstrap';
 import {useContext} from 'react';
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from '../../Context/cart.context';
 
 function ProductCard({ product }) {
 

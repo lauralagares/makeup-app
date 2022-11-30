@@ -1,12 +1,12 @@
-import './style.css';
-import Ad from '../../components/ad/ad';
-import HomeCarousel from '../../components/carousel/carousel';
-import Header from '../../components/header/header';
-import Menu from '../../components/menu/menu';
-import Footer from '../../components/footer/footer';
+import './Style.css';
+import Ad from '../../Components/Ad/Ad';
+import HomeCarousel from '../../Components/Carousel/Carousel';
+import Header from '../../Components/Header/Header';
+import Menu from '../../Components/Menu/Menu';
+import Footer from '../../Components/Footer/Footer';
 import { Container } from 'react-bootstrap';
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/theme.context';
+import { ThemeContext } from '../../Context/theme.context';
 
 function Home() {
 

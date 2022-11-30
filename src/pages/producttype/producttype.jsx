@@ -1,12 +1,12 @@
-import Header from "../../components/header/header";
-import Menu from "../../components/menu/menu";
-import useFetch from "../../data/useFetch";
-import ProductCard from "../../components/productCard/productCard";
+import Header from "../../Components/Header/Header";
+import Menu from "../../Components/Menu/Menu";
+import useFetch from "../../Data/useFetch";
+import ProductCard from "../../Components/ProductCard/ProductCard";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import Loader from "../../components/loader/loader";
+import Loader from "../../Components/Loader/Loader";
 import {useContext} from 'react';
-import {ThemeContext} from '../../context/theme.context';
+import {ThemeContext} from '../../Context/theme.context';
 
 function ProductType() {
 

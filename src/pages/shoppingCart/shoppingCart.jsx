@@ -1,12 +1,12 @@
-import './style.css';
+import './Style.css';
 import { useNavigate } from 'react-router-dom';
-import Ad from '../../components/ad/ad';
-import Header from '../../components/header/header';
+import Ad from '../../Components/Ad/Ad';
+import Header from '../../Components/Header/Header';
 import { useContext } from 'react';
-import { CartContext } from '../../context/cart.context';
-import { ThemeContext } from '../../context/theme.context';
+import { CartContext } from '../../Context/cart.context';
+import { ThemeContext } from '../../Context/theme.context';
 import { Container } from 'react-bootstrap';
-import CartItem from '../../components/cartItem/cartItem';
+import CartItem from '../../Components/CartItem/CartItem';
 
 function ShoppingCart() {
 
