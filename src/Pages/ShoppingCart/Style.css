@@ -87,4 +87,8 @@
     font-size: 0.5rem;
 }
 
+.cart-grid-container {
+    display: flex;
+    flex-direction: column;
+}
 }
