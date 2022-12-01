@@ -17,19 +17,19 @@ code {
   src: url(../src/Fonts/Calligraphy-D4pm.ttf)
 }
 
+
 @font-face{
   font-family: "makeup-second-font";
-  src: url(../src/Fonts/Dosis-ExtraLight.ttf)
+  src: url(../src/Fonts/OpenSans-Light.ttf)
 }
-
 
 h1{
   font-family: "makeup-first-font";
 }
 
-/* p, span{
+p, span{
   font-family: 'makeup-second-font';
-} */
+}
 
 .main-container {
   display: flex;

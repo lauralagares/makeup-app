@@ -19,6 +19,10 @@
     color: #FD97B5;
 }
 
+.grid-item-1 {
+    margin-top: 1rem;
+}
+
 .grid-item-1 > div > p:nth-child(2) {
     text-align: center;
     text-decoration: underline;
@@ -90,5 +94,6 @@
 .cart-grid-container {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 }
