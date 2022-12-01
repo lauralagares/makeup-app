@@ -49,7 +49,7 @@ function Menu() {
     ];
 
     return (
-        <Nav className="menu-container">
+        <Nav className="menu-container bg-dark">
 
             {arrayProducts.map((p, i) =>
                 <span key={i} onClick={() => navigate(`/product_type/${p.productParam}`)}>{p.productName}</span>)

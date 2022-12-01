@@ -7,7 +7,7 @@ import {FaTiktok} from 'react-icons/fa';
 
 function Footer() {
   return (
-    <Nav className="footer-background">
+    <Nav className="footer-background bg-dark">
       <section>
         <h1>COMPANY</h1>
         <p>About Us</p>

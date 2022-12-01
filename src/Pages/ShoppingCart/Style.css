@@ -4,10 +4,6 @@
     grid-auto-rows: minmax(100vh, auto);
 }
 
-.cart-grid-item{
-    border: 1px solid #ccc;
-}
-
 .empty-cart {
     display: flex;
     flex-direction: column;
@@ -17,6 +13,10 @@
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+}
+
+.empty-cart >p:nth-child(2):hover {
+    color: #FD97B5;
 }
 
 .grid-item-1 > div > p:nth-child(2) {
@@ -31,14 +31,12 @@
     margin-top: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
+    padding: 0.5rem;
 }
-
-
 
 .grid-item-2 > section {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #ccc;
     padding: 1rem;
 }
 
@@ -64,7 +62,7 @@
     text-align: center;
     border: none;
     color: white;
-    width: 60%;
+    width: 80%;
     font-weight: bold;
     font-size: 1.5rem;
     margin: 2rem;
@@ -82,7 +80,7 @@
 }
   
 .grid-item-2 > section > span {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
 }
 
 .checkout-button > button {

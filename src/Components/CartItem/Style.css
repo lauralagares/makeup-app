@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background-color: white;
-    border-top: solid 1px #ccc;
+    border: solid 1px #ccc;
     width: 100%;
 }
 
@@ -75,11 +75,11 @@
 }
 
 .counter > div > span {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .remove-item {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 }
 

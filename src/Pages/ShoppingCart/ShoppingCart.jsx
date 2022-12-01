@@ -28,7 +28,7 @@ function ShoppingCart() {
           {
             cart.length === 0 
             ? <div className='empty-cart'>
-                <p>Your bag is empty.</p>
+                <p>Your bag is empty.😓</p>
                 <p onClick={() => navigate(-1)}>CONTINUE SHOPPING</p>
               </div>
             : cart.map(e => <CartItem key={e.id} product={e}></CartItem>

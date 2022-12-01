@@ -14,7 +14,7 @@ function Header() {
   const {totalProducts} = useContext(CartContext);
 
   return (
-    <Navbar className="header-background" expand="lg">
+    <Navbar className="bg-dark" expand="lg">
       <Container fluid>
         <Navbar.Brand onClick={() => navigate("/")}>
           <h1 className='header-item'>MAKE UP</h1>
