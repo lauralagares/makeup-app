@@ -20,7 +20,7 @@
 }
 
 .grid-item-1 {
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .grid-item-1 > div > p:nth-child(2) {
@@ -29,13 +29,17 @@
     cursor: pointer;
 }
 
+.grid-item-2 {
+    margin-top: 0.5rem;
+}
+
 .grid-item-2 > p {
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem;
+    padding: 0.5rem; */
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0.5rem;
 }
 
 .grid-item-2 > section {
@@ -52,9 +56,9 @@
     font-weight: bold;
 }
 
-.grid-item-2 > section:nth-child(2) > span:nth-child(2) {
+/* .grid-item-2 > section:nth-child(2) > span:nth-child(2) {
     color: #FD97B5;
-}
+} */
 
 .checkout-button {
     display: flex;

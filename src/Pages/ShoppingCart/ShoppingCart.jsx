@@ -37,10 +37,10 @@ function ShoppingCart() {
         </div>
         <div className="cart-grid-item grid-item-2">
           <p>ORDER SUMMARY</p>
-          <section>
+          {/* <section>
             <span>Add a promo code</span>
             <span>+</span>
-          </section>
+          </section> */}
           <section>
             <span>Subtotal</span>
             <span>${subTotalPrice}</span>
