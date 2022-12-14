@@ -2,6 +2,7 @@ import './Style.css';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../../Context/Cart.Context';
+import Soldout from '../../Images/sold-out.png';
 
 function CartItem({ product }) {
 
@@ -20,7 +21,7 @@ function CartItem({ product }) {
     }
 
     const handleError = (e) => {
-        e.target.src = "https://cdn.dribbble.com/users/1314233/screenshots/6081627/media/8809f8695b8adb03a571b0dd66a220ea.jpg?compress=1&resize=1200x900&vertical=top"
+        e.target.src = Soldout;
         e.onError = null;
     }
 

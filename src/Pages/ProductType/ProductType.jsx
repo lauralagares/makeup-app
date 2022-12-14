@@ -13,7 +13,7 @@ function ProductType() {
     const {name} = useParams();
     const {theme} = useContext(ThemeContext);
     const { data, error, loading } = useFetch(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${name}`);
-
+    console.log(data);
     return (
         <>
             <Header></Header>
@@ -22,7 +22,7 @@ function ProductType() {
                 {loading && <Loader></Loader>}
                 {error && <p>Something went wrong...</p>}
                 <div className="products-container">
-                    {data.map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
+                    {data.sort().map(p => <ProductCard key={p.id} product={p}></ProductCard>)}
                 </div>
             </Container>
         </>

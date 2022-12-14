@@ -1,14 +1,12 @@
 .footer-background{
     display: flex;
     justify-content: space-between;
-    color: #fff;
-    border-top: 1px solid #FD97B5;
-    
+    color: #fff;  
 }
 
 .footer-background > section > h1 {
     font-size: 3.5rem;
-    color: #FD97B5;
+    color: hotpink;
 }
 
 .footer-background > section {

@@ -1,37 +1,43 @@
 import './Style.css';
 import { Navbar, Container, Form } from 'react-bootstrap';
-import {GiShoppingCart} from 'react-icons/gi';
-import {useContext} from 'react';
-import {ThemeContext} from '../../Context/Theme.Context';
+import { GiShoppingCart } from 'react-icons/gi';
+import { useContext } from 'react';
+import { ThemeContext } from '../../Context/Theme.Context';
 import { CartContext } from '../../Context/Cart.Context';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
 
   let navigate = useNavigate();
 
-  const {toggleTheme} = useContext(ThemeContext);
-  const {totalProducts} = useContext(CartContext);
+  const { toggleTheme } = useContext(ThemeContext);
+  const { totalProducts } = useContext(CartContext);
 
   return (
     <Navbar className="bg-dark" expand="lg">
       <Container fluid>
         <Navbar.Brand onClick={() => navigate("/")}>
-          <h1 className='header-item'>MAKE UP</h1>
+          <h1 className='header-item'> VIRTUAL MAKE-UP STORE</h1>
         </Navbar.Brand>
 
-        <Navbar.Brand onClick={() => navigate("/cart")} className='header-item'>
-        <GiShoppingCart className='cart-icon'></GiShoppingCart>
-        {totalProducts() === 0 
-        ? ''
-        : <div className="total-products">{totalProducts()}</div>}
-        
-        </Navbar.Brand>
+        {/* <Navbar.Brand onClick={() => navigate("/cart")} className='header-item'>
+          <GiShoppingCart className='cart-icon'></GiShoppingCart>
+          {totalProducts() === 0
+            ? ''
+            : <div className="total-products">{totalProducts()}</div>}
 
-        <Navbar.Brand className='d-flex'>
+        </Navbar.Brand> */}
+
+        <Navbar.Brand className='d-flex gap-3'>
+
+          <div onClick={() => navigate("/cart")} className='header-item'>
+            <GiShoppingCart className='cart-icon'></GiShoppingCart>
+            {totalProducts() === 0
+              ? ''
+              : <div className="total-products">{totalProducts()}</div>}
+          </div>
 
           <Form className="d-flex" style={{ alignItems: 'center' }}>
-        
             <Form.Check
               type="switch"
               id="custom-switch"
@@ -39,7 +45,7 @@ function Header() {
             />
             🌛
           </Form>
-          
+
         </Navbar.Brand>
       </Container>
     </Navbar>

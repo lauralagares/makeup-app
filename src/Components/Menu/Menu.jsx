@@ -1,3 +1,4 @@
+import './Style.css';
 import { Nav } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 

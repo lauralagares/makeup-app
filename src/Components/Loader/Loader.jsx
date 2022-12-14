@@ -2,11 +2,7 @@ import './Style.css';
 
 function Loader() {
   return (
-    <main className="dot-loader-container">
-        <div className="dot-loader"></div>
-        <div className="dot-loader"></div>
-        <div className="dot-loader"></div>
-    </main>
+    <span class="loader"></span>
   )
 }
 

@@ -36,7 +36,7 @@
     justify-content: space-between;
     width: 40%;
     border-radius: 15px;
-    border: 1px solid #000;
+    border: 1px solid gray;
     padding: 0.3rem;
 }
 
@@ -51,11 +51,11 @@
     background-color: transparent;
 }
 
-.counter > button{
+/* .counter > button{
     background-color: #f5a2ce;
     border: none;
     color: white;
-}
+} */
 
 .remove-item {
     text-decoration:underline;

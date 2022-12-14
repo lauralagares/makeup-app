@@ -6,7 +6,7 @@ import React from 'react'
 function Ad() {
     return (
         <Nav className="ad-container">
-            <p>🌍 FREE SHIPPING WORLDWIDE ON ALL ORDERS ABOVE $100 </p>
+            <p>FREE SHIPPING WORLDWIDE 🌍 ON ALL ORDERS ABOVE $100 </p>
         </Nav>
     )
 }

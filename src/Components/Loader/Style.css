@@ -1,32 +1,20 @@
-.dot-loader{
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
+.loader {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid;
+    border-color: #ff4500 transparent;
     border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
     margin: 1rem;
-    animation: scaling 2.5s ease-in-out infinite;
-}
-
-@keyframes scaling {
-    0%, 100%{
-        transform: scale(0.2);
-        background-color: #ec008c;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
     }
-    50%{
-        transform: scale(1);
-        background-color: #f5a2ce;
+    100% {
+      transform: rotate(360deg);
     }
-
-}
-
-.dot-loader:nth-child(0){
-    animation-delay: 0s;
-}
-
-.dot-loader:nth-child(1){
-    animation-delay: 0.2s;
-}
-
-.dot-loader:nth-child(2){
-    animation-delay: 0.4s;
-}
+  } 
