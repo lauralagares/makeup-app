@@ -42,7 +42,6 @@
     display: flex;
     justify-content: space-between;
     width: 40%;
-    /* border-radius: 15px; */
     border: solid 1px lightgrey;
     background-color: white;
     padding: 0.3rem;

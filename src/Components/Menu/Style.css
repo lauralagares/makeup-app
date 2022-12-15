@@ -10,11 +10,11 @@
     color: #ff4500;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 430px) {
+@media(max-width: 430px) {
 
   .menu-container>span {
     font-size: 0.8rem;
-    margin: 0.2rem;
+    margin: 0.7rem;
   }
 
 }
