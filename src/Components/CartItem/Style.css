@@ -8,7 +8,7 @@
 }
 
 .item-img-container {
-    width: 20%;
+    width: 35%;
 }
 
 .item-img-container>img {
@@ -34,14 +34,14 @@
     align-items: center;
     gap: 1rem;
     justify-content: center;
-    width: 40%;
+    width: 30%;
     margin-top: 0.3rem;
 }
 
 .counter>div {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 35%;
     border: solid 1px lightgrey;
     background-color: white;
     padding: 0.3rem;
@@ -70,7 +70,6 @@
     }
 
     .item-img-container>img {
-        width: 6rem;
         height: 6rem;
     }
 
