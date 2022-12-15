@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #776969;
     height: 50%;
     justify-content: space-between;
     margin: 0.5rem;
@@ -19,18 +18,19 @@
 
 .card-body-container > p:nth-child(1) {
     font-size: 1rem;
-    color: #000;
+    color: #404040;
     height: 10%;
 }
 
 .card-body-container > p:nth-child(2) {
     font-size: 0.7rem;
+    color: #808080;
     height: 5%;
 }
 
 .card-body-container > p:nth-child(3) {
-    font-weight: 500;
     font-size: 0.8rem;
+    color: #404040;
     height: 5%;
 }
 .colors-info {
@@ -51,20 +51,22 @@
     width: 80%;
     height: 16%;
     font-weight:bold;
+    border: 1px solid #E00085;
 }
 
 .button-add-1 {
-    border: none;
-    background-color: hotpink;
-    color: white ;
-    border-radius: 3px;
+    color: white;
+    background-color: #E00085;
+}
+
+.button-add-1:hover {
+    color:yellow;
 }
 
 .button-add-2 {
-    background-color:white;
-    color: hotpink;
-    border: 1px solid hotpink;
-    border-radius: 3px;
+    border: none;
+    color: #E00085;
+    background-color: white;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 430px) {

@@ -22,46 +22,43 @@ function ShoppingCart() {
     <>
       <Ad></Ad>
       <Header></Header>
-      <Container fluid className={`cart-grid-container bg-${theme} text-${fontColor}`}>  
+      <Container fluid className={`cart-grid-container bg-${theme} text-${fontColor}`}>
 
         <div className="cart-grid-item grid-item-1">
           {
-            cart.length === 0 
-            ? <div className='empty-cart'>
+            cart.length === 0
+              ? <div className='empty-cart'>
                 <p>Your bag is empty.😓</p>
                 <p onClick={() => navigate(-1)}>CONTINUE SHOPPING</p>
               </div>
-            : cart.map(e => <CartItem key={e.id} product={e}></CartItem>
-          )
+              : cart.map(e => <CartItem key={e.id} product={e}></CartItem>
+              )
           }
         </div>
         <div className="cart-grid-item grid-item-2">
-          <p>ORDER SUMMARY</p>
-          {/* <section>
-            <span>Add a promo code</span>
-            <span>+</span>
-          </section> */}
+
           <section>
             <span>Subtotal</span>
-            <span>${subTotalPrice}</span>
+            <span>{subTotalPrice} €</span>
           </section>
+
           <section>
             <span>Shipping</span>
-            <span>$20</span>
+            <span>20 €</span>
           </section>
-         
-          {
-            cart.length === 0 
-            ?  ""
 
-            : <section>
+          {
+            cart.length === 0
+              ? ""
+
+              : <section>
                 <span>TOTAL</span>
-                <span>${subTotalPrice > 100 ? subTotalPrice : totalPlusShipping.toFixed(2)}</span>
+                <span>{subTotalPrice > 100 ? subTotalPrice : totalPlusShipping.toFixed(2)} €</span>
               </section>
           }
-          
-          <div className ="checkout-button">
-          <button><span>PROCEED TO CHECKOUT</span></button>
+
+          <div className="checkout-button">
+            <button><span>PROCEED TO CHECKOUT</span></button>
           </div>
 
         </div>

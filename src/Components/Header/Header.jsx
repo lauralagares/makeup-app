@@ -15,20 +15,12 @@ function Header() {
 
   return (
     <Navbar className="bg-dark" expand="lg">
-      <Container fluid>
+      <div className='nav-container'>
         <Navbar.Brand onClick={() => navigate("/")}>
           <h1 className='header-item'> VIRTUAL MAKE-UP STORE</h1>
         </Navbar.Brand>
 
-        {/* <Navbar.Brand onClick={() => navigate("/cart")} className='header-item'>
-          <GiShoppingCart className='cart-icon'></GiShoppingCart>
-          {totalProducts() === 0
-            ? ''
-            : <div className="total-products">{totalProducts()}</div>}
-
-        </Navbar.Brand> */}
-
-        <Navbar.Brand className='d-flex gap-3'>
+        <Navbar.Brand className='d-flex gap-3 prueba'>
 
           <div onClick={() => navigate("/cart")} className='header-item'>
             <GiShoppingCart className='cart-icon'></GiShoppingCart>
@@ -47,7 +39,7 @@ function Header() {
           </Form>
 
         </Navbar.Brand>
-      </Container>
+      </div>
     </Navbar>
   )
 }

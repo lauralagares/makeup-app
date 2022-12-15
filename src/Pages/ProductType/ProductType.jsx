@@ -13,7 +13,7 @@ function ProductType() {
     const {name} = useParams();
     const {theme} = useContext(ThemeContext);
     const { data, error, loading } = useFetch(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${name}`);
-    console.log(data);
+
     return (
         <>
             <Header></Header>
