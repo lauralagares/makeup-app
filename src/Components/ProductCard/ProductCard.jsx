@@ -42,7 +42,7 @@ function ProductCard({ product }) {
 
           {
             isInCart(product.id) === true
-            ? <button className="button-add-2"><span>ADDED TO CART🛍️</span></button>
+            ? <button className="button-add-2"><span>ADDED TO CART</span></button>
             : <button className="button-add-1" onClick={handleAdd}><span>ADD TO CART</span></button>
           }
   

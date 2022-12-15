@@ -33,7 +33,7 @@
     height: 21rem;
     padding: 1rem;
     margin: 1rem;
-    background-color: #f8f8ff;
+    background-color: #F8F9FA;
 }
 
 .grid-item-2>section {
@@ -69,18 +69,14 @@
     padding: 1rem;
 }
 
-.checkout-button>button:hover {
-    color: yellow;
-}
-
 @media(max-width:900px) {
 
     .grid-item-2>section>span {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .checkout-button>button {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
 }
 
