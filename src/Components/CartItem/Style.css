@@ -19,7 +19,7 @@
 
 .cart-item-name {
     display: flex;
-    width: 40%;
+    width: 35%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -41,7 +41,7 @@
 .counter>div {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 60%;
     border: solid 1px lightgrey;
     background-color: white;
     padding: 0.3rem;
@@ -70,6 +70,7 @@
     }
 
     .item-img-container>img {
+        width: 6rem;
         height: 6rem;
     }
 
@@ -78,11 +79,10 @@
     }
 
     .counter>div {
-        width: 80%;
-
+        width: 70%;
     }
 
-    .counter>div>span {
+    .counter>div{
         font-size: 0.6rem;
     }
 
